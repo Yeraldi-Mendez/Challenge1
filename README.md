@@ -1,158 +1,130 @@
-# 01 HTML, CSS, and Git: Code Refactor
+# 01 Code Refactor_YMS
+
+Bootcamp homework - 01 HTML, CSS, Git: Code Refactor
+
+## The Challenge
+
+The challenge consisted of refactoring the existing webpage in order to make it accessible for the users and optimized for search engines.
+
+![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01_html_css_challenge1.png)
+
+
+
+### Acceptance Criteria
+
+  * Meets accessibility standards
+  * Applies semantic HTML elements
+  * Follows a logical structure independent of styling and positioning
+  * Images include an alt attribute
+  * Heading atr falls in sequential order
+  * Includes a discriptive title element 
+  * Ensures links are functional
+  * Clean up CSS selectors and properties
+  * Include comments before each element or section
+  
+
+## Process
+
+To accomplish this challenge the following steps are to be done:
 
-## Challenges in This Course
+  * Understand the webpage purpose, content and the User's needs
+  * Research sources to understand concepts
+    * What is code refactoring?
+    * What are semantic HTML elements?
+    * What are web accesibility standards?
+    * How to make a proper README file
 
-There are two types of Challenges in this course. Each one is designed to prepare you for a scenario that you're likely to encounter as a web developer.
+  * Apply the above cocepts when revising and editing the HTML and CSS file
+  
+The modifications and findings to the HTML file
 
-### Challenge Types 
+      Stucture and Descriptive comments were added
+      <!-- Header -->
+      <!-- Main Content -->
+      <!-- Additional indirect content -->
+      <!-- Footer -->
+    
+    Changed the title to "Business Digital Website
+    Changed <div> for <Header> tag
+    Changed <div> for <nav> tag
 
-The two types of Challenges are the following:
+    Added <Main> tag to group the the main content 
+    Added <section> tag within the main content to identify each section on the webpage
 
-* **On-the-job ticket** or **feature request Challenges** give you starter code in a folder called `Develop`, which you'll modify to complete the Challenge. Odd-numbered modules follow this format.
+    Added <aside> tag to group the additional indirect content
+    Added <section> tag, similarly to main
 
-* **Job-seeking coding assessments** or **take-home assignments** don't provide starter code. You'll build these from scratch. Even-numbered modules follow this format.
+    Added <footer> tag at the bottom of the page
 
-### Challenge Elements
+    Included alt properties to each image
+    Included class to id for search-engine-otimization, online-reputation-management, social-media-marketing
+    Changed class to id for benefit-lead, benefit-brand, and benefit cost
 
-Challenges adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. Practicing this will prepare you for the workflows you'll experience as a professional full-stack web developer. 
+The modifications and findings to the CSS file
 
-> **Deep Dive**: To learn more about agile, read this [Wikipedia article on agile software development](https://en.wikipedia.org/wiki/Agile_software_development).
+    Comments were added to the CSS file and the css rules were clasified accordingly:
 
-Each Challenge contains the following elements:
+    Rules simplified:
 
-* **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them." 
+    #benefit-lead,
+    #benefit-brand,
+    #benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+    }
 
-* **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of Challenges. 
+    #benefit-lead h3,
+    #benefit-brand h3,
+    #benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    }   
 
-* **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
+    #benefit-lead img,
+    #benefit-brand img,
+    #benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+    }
 
-* **Submission**: You'll submit your completed Challenge for review. In the real world, when a developer finishes working on a project, another developer reviews the code, providing feedback on errors and making sure that all of the acceptance criteria have been met. For each Challenge, your instructional staff will serve as your team of reviewers.
+    #search-engine-optimization, 
+    #online-reputation-management, 
+    #social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    }
 
-## Your Task
+    #search-engine-optimization img,
+    #online-reputation-management img,
+    #social-media-marketing img {
+    max-height: 200px;
+    }
 
-This week is an odd-numbered week, so your Challenge is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify. 
+    #search-engine-optimization h2,
+    #online-reputation-management h2,
+    #social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    }
 
-**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible. 
+## The output
+   
+With research and application of specific changes, an accessible project was ensured.
 
-> **Important**: When working with someone else's code, you should adhere to the **Scout Rule**&mdash;always leave the code a little cleaner than when you found it.
+## Installation
 
-An increasingly important consideration for businesses, web **accessibility** ensures that people with disabilities can access a website using assistive technologies like video captions, screen readers, and braille keyboards. Accessibility is good for business&mdash;for one thing, accessible sites rank higher in search engines like Google. It also helps companies avoid litigation, which might arise if people with disabilities can't access a website.
+The project was uploaded to Github at the following respsitory: 
+https://github.com/Yeraldi-Mendez/Challenge1.git
 
-Accessibility can include complex requirements, but your tech lead has given you a small list of specific criteria for this project. These criteria are documented in the Acceptance Criteria section.
+You can access the deployed application with the Github pages link:
+https://yeraldi-mendez.github.io/Challenge1/
 
-To impress clients, you should always exceed expectations and improve the codebase for long-term sustainability. For example, check that all links are functioning correctly. You can also increase the efficiency of the CSS by consolidating the selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 
-Are you ready to begin? Here are this week's Challenge requirements.
+## Aknowledgements
 
-## User Story
-
-```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
-```
-
-## Acceptance Criteria
-
-```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the icon and image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
-```
-
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
-
-> **Note**: This layout is designed for desktop viewing, so you may notice that some of the elements don't look like the mock-up at a resolution smaller than 768px. Eventually you'll learn how to make elements responsive so that your web application is optimized for any screen size.
-
-## Getting Started
-
-Follow these instructions to create your project and deploy it to GitHub Pages:
-
-1. Create a new repository on your GitHub account and clone it to your computer.
-
-2. When you're ready to deploy, use the `git add`, `git commit`, and `git push` commands to save and push your code to your GitHub repository.
-
-3. Navigate to your GitHub repository in the browser and then select the Settings tab on the right side of the page.
-
-4. On the Settings page, scroll down to the GitHub Pages section. Then, in the section labeled Source, select the `main` branch as your source.
-
-5. Navigate to <your-github-username.github.io/your-repository-name> and you will find that your new webpage has gone live! For example, if your GitHub username is "lernantino" and the project is "css-demo-site", then your URL would be <lernantino.github.io/css-demo-site>.
-
-You can also refer to this [YouTube video on enabling GitHub Pages](https://youtu.be/P4Mu1t5rIXg) for more guidance.
-
-> **Important**: It might take a few minutes for GitHub pages to display your site correctly. If your project does not deploy or display correctly, check that all file paths in your application are relative and use the right casing. GitHub is case-sensitive, an inccorect capital or lowercase letter could cause problems in deployment.
-
-Be sure to add, commit, and push your work to see the most up-to-date version of your app!
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following code improvements:
-
-  * Application's links all function correctly.
-
-  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
-
-  * Application's CSS file is properly commented.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application resembles mock-up provided in the Challenge instructions (at least 90%).
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This homework project was conducted by Yeraldi Mendez Solano under the supervision of UCI coding bootcamp FALL 2022
